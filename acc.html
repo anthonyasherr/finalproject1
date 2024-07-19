@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Synapse</title>
+        <link rel="stylesheet" href="accstyle.css">
+    </head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-nav-container">
+            <div id="logo-div">
+                <img src="imgs/logo.png" width="100" height="100">
+            </div>
+            <div id="nav-div">
+                <ul>
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="acc.html">Account</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="dl.html">Downloads</a></li>
+                    <li><a href ="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+<div id="main-div" class="clearfix">
+    <div id="sidebar-div">
+        <ul>
+            <a href ="index.html">Home</a>
+            <a href ="acc.html">Account</a>
+            <a href ="about.html">About</a>
+            <a href ="dl.html">Downloads</a>
+            <a href ="contacts.html">Contact</a>
+        </ul>
+        </div>
+    <div id="bodyarea-div">
+        <form action="https://formsubmit.co/202312287@fit.edu.ph" method="POST">
+            <h2>New Account</h2>
+            <div class="inputBox">
+                <input type="text" name="username" required>
+                <label>Username</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <label>Create Password</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="cpassword" required>
+                <label>Confirm Password</label>
+            </div>
+            <div class="inputBox">
+               <input type="submit" value="Create">
+            </div>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </form>
+        <script>
+            let label = document.querySelectorAll
+            ('label').forEach(label => {label.innerHTML = label.innerText.split('').map((letters, i) => `<span style = "transition-delay: ${i * 50}ms"> ${letters} </span>`).join(''); });  
+        </script>
+        </div>
+</div>
+
+<div id="footer-container">
+    <div id="footerlogo-div">
+        <img src="imgs/logo.png" width="100" height="100">
+    </div>
+    <div id="contacts-div">
+        Anthony Asher A. Genciana<br>
+        202312287@fit.edu.ph
+    </div>
+</div>
+
+    
+</div>
+</body>
+</html>
